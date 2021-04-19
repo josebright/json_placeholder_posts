@@ -14,20 +14,6 @@ const server = http.createServer(function(req, res){
     //     }
     // `);
 
-    // res.end(`
-    //     <html>
-    //         <head>
-    //             <title>Website</title>
-    //         </head>
-    //         <body>
-    //             <h1>
-    //                 Welcome on Board!
-    //             </h1>
-    //             <p> The internship is going well</p>
-    //         </body>
-    //     </html>
-    // `);
-
     res.end(`
         <html>
             <head>
@@ -41,6 +27,7 @@ const server = http.createServer(function(req, res){
             </body>
         </html>
     `);
+
 });
 
 server.listen(8000, 'localhost');
