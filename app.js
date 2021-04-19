@@ -2,10 +2,10 @@ const fs = require('fs');
 const got = require('got');
 
 function fetch(){
-    got('http://jsonplaceholder.typicode.com/posts', { json: true }).then(response => {
-    console.log(response.body);
+    got('http://jsonplaceholder.typicode.com/posts').then(response => {
+    console.log("Json file gotten");
     temp = response.body;
-    fs.writeFile('/result/posts.json', temp, (err)=> {
+    fs.writeFile('./result/posts.json', temp, (err)=> {
         if(err){
             return console.log(err);
         }
